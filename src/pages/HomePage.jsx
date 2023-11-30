@@ -4,6 +4,7 @@ import web from "../assets/img/web.png";
 import design from "../assets/img/design.png";
 import foto from "../assets/img/foto.png";
 import other from "../assets/img/other.png";
+import carbon from "../assets/img/carbon.svg";
 import { icone } from "../data";
 
 const homepage = () => {
@@ -32,7 +33,7 @@ const homepage = () => {
         </div>
       </div>
       {/* ini section skill */}
-      <div className="bg-gradient-to-b from-kuning to-pink-500 h-[900px] rounded-t-[100px]">
+      <div className="bg-gradient-to-b from-kuning to-pink-500 h-[1598px] rounded-t-[100px]">
         <div className="container px-6">
           <div className="grid grid-cols-1 place-items-center pt-7">
             <span className="text-white text-2xl font-semibold">My Skill</span>
@@ -81,6 +82,12 @@ const homepage = () => {
               <span className="text-white">Other</span>
             </div>
           </div>
+        </div>
+        <div className="mt-10 grid justify-center">
+          <button className="text-pink-600 bg-white rounded-lg text-base font-semibold py-2 px-7 w-32 grid grid-cols-2 justify-items-center items-center order-2 text-center hover:bg-ungu">
+            <img className="order-1" src={carbon}></img>
+            More
+          </button>
         </div>
       </div>
       {/* ini section skill */}
