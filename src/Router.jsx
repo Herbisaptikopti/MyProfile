@@ -16,7 +16,7 @@ const ProjectRouter = () => {
           <Route path="/profile" Component={profilepage} />
         </Routes>
       </Router>
-      <FooterComponent />
+      {/* <FooterComponent /> */}
     </React.Suspense>
   );
 };
