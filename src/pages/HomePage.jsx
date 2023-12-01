@@ -7,7 +7,21 @@ import other from "../assets/img/other.png";
 import carbon from "../assets/img/carbon.svg";
 import { icone } from "../data";
 
+// ini untuk perintah download file yang ada di folder public
+const Resume_File_URL = "http://localhost:5173/resume.pdf";
+
 const homepage = () => {
+  const downloadFileAtURL = (url) => {
+    const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
+  // ini untuk perintah download file yang ada di folder public
+
   return (
     <div className="bg-gradient-to-b from-ungu from--30.28% to-hijau to-149.19% h-747">
       <div className="containe p-10 ">
@@ -26,7 +40,12 @@ const homepage = () => {
             Ingin tahu lebih tentang saya download resume di bawah ini
           </p>
           <div className="pt-6">
-            <button className="bg-kuning text-white py-3 px-4 text-xs font-semibold rounded-lg hover:bg-ungu">
+            <button
+              onClick={() => {
+                downloadFileAtURL(Resume_File_URL);
+              }}
+              className="bg-kuning text-white py-3 px-4 text-xs font-semibold rounded-lg hover:bg-ungu"
+            >
               Download Resume
             </button>
           </div>
