@@ -6,6 +6,7 @@ import foto from "../assets/img/foto.png";
 import other from "../assets/img/other.png";
 import carbon from "../assets/img/carbon.svg";
 import { icone } from "../data";
+import FooterComponent from "../components/FooterComponent";
 
 // ini untuk perintah download file yang ada di folder public
 const Resume_File_URL = "http://localhost:5173/resume.pdf";
@@ -108,6 +109,69 @@ const homepage = () => {
             More
           </button>
         </div>
+
+        <div className="grid justify-items-center mt-16">
+          <span className="text-white text-base text-center w-72">
+            Jika Anda Tertarik Dengan Saya, Silahkan Hubungi Saya
+          </span>
+        </div>
+
+        <div className="container px-6 mx-auto justify-items-center pt-10">
+          <from>
+            <div className="grid grid-rows-2 grid-cols-2 gap-4 items-center justify-items-center">
+              <input
+                className="p-5 w-[168px] h-14 rounded-lg bg-white bg-opacity-30 focus:ring-blue-500 focus:border-blue-500"
+                type="text"
+                name=""
+                id=""
+                placeholder="First Name"
+              />
+              <input
+                className="p-5 w-[168px] h-14 rounded-lg bg-white bg-opacity-30"
+                type="text"
+                name=""
+                id=""
+                placeholder="Last Name"
+              />
+              <input
+                className="p-5 w-[168px] h-14 rounded-lg bg-white bg-opacity-30"
+                type="email"
+                name=""
+                id=""
+                placeholder="Email"
+              />
+              <input
+                className="p-5 w-[168px] h-14 rounded-lg bg-white bg-opacity-30"
+                type="number"
+                name=""
+                id=""
+                placeholder="Phone Number"
+              />
+            </div>
+            <div className="grid grid-rows-1 grid-cols-1 items-center justify-items-center mt-5">
+              <input
+                className="p-5 w-[360px] h-48 rounded-lg bg-white bg-opacity-30 active:border-none"
+                type="text"
+                name=""
+                id=""
+                placeholder="Message"
+              />
+            </div>
+
+            <div className="grid justify-items-center mt-9">
+              <button className="w-32 text-blue-500 rounded-lg text-base font-semibold hover:bg-ungu hover:text-white bg-white py-4">
+                Send
+              </button>
+            </div>
+          </from>
+          <div className="text grid justify-center mt-12">
+            <span className="text-white text-center w-72">
+              Thank you for visiting, have a nice day. contact me if you need
+              help
+            </span>
+          </div>
+        </div>
+        <FooterComponent />
       </div>
       {/* ini section skill */}
     </div>

@@ -1,5 +1,6 @@
 import vector from "../assets/img/Vector.svg";
 import logo from "../assets/img/bj.svg";
+
 const NavComponent = () => {
   return (
     <nav className="p-5 bg-ungu">

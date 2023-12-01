@@ -1,6 +1,6 @@
-import ProjectRouter from "./Router";
+import Router from "./Router";
 
 const app = () => {
-  return <ProjectRouter />;
+  return <Router />;
 };
 export default app;
